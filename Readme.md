@@ -15,10 +15,21 @@ Clona el repositorio:
 git clone https://github.com/ajmaestre/prueba-devops-alexander-maestre.git
 cd prueba-devops-alexander-maestre
 ```
+---
+
+## 🐳 3. Ejecutar script
+
+```sh
+chmod +x start.sh
+./start.sh
+
+```
 
 ---
 
-## 🐳 3. Construcción de la Imagen Docker
+---
+
+## 🐳 4. Construcción de la Imagen Docker
 
 2️⃣ Construye la imagen:
 ```sh
@@ -27,7 +38,7 @@ docker build . -t prueba-devops-app
 
 ---
 
-## 🚀 4. Ejecutar los Contenedores con Docker
+## 🚀 5. Ejecutar los Contenedores con Docker
 
 ### 🔹 Ejecución:
 ```sh
@@ -43,7 +54,7 @@ docker run -d --name prueba-devops -p 5000:5000 -v $(pwd)/logs:/app/logs prueba-
 
 ---
 
-## 📝 5. Verificación de Contenedores en Ejecución
+## 📝 6. Verificación de Contenedores en Ejecución
 
 ```sh
 docker ps
@@ -51,7 +62,7 @@ docker ps
 
 ---
 
-## 📝 6. Verificación en el Navegador
+## 📝 7. Verificación en el Navegador
 
 ```sh
 http://localhost:5000
